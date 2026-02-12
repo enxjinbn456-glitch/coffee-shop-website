@@ -1,0 +1,337 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Merriweather", serif;
+}
+.all-content{
+    background: #f7f5f2;
+}
+html ::-webkit-scrollbar-track{ /*браузерийн scrollbar-ийн зам (track) буюу суурь хэсгийг заана.*/
+    background: transparent;  /*scrollbar-ийн зам нь ил харагдахгүй, цэвэр харагдана.*/
+}
+html ::-webkit-scrollbar-thumb{  /*scrollbar-ийг хөдөлгөж байгаа “thumb” буюу барьдаг хэсэг.*/
+background:#b2744c;
+border-radius: 10px;
+ }
+html ::-webkit-scrollbar{  /*scrollbar-ийн нийт өргөнийг заана.*/
+ width: 10px;
+}
+
+/* navbar start */
+#navbar{
+    background-color: #b2744c;
+}
+#logo img{
+border-radius: 10px; 
+width: 160px;
+margin-left: 40px;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item  .nav-link{
+    color: black;
+    margin-left:  10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-item  .nav-link:hover{
+    background-color: #f7f5f2;
+    border-radius: 5px;
+    color: black;
+}
+#navbar form button{
+    background: black;
+    color: white;
+    border: 1px solid white;
+
+}
+/* nawbar end */
+
+
+
+
+
+#Home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./image/coffee1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 88%;
+}
+
+#Home .content{
+    padding-top: 210px;
+    margin-left: 56px;
+}
+#Home .content h3{
+    font-size: 50px;
+    color: white;
+}
+#Home .content p{
+    margin-top: 10px;
+    color: white;
+}
+#btn {
+    width: 160px;
+    height: 36px; 
+    display: flex;          /* Flexbox идэвхжүүлнэ */
+    justify-content: center; /* Текстийг хэвтээ тэнхлэгийн дагуу голлуулна */
+    align-items: center;     /* Текстийг босоо тэнхлэгийн дагуу голлуулна */
+    
+    margin-top: 20px;
+    background: white;
+    color: black;            /* Текстийн өнгийг эхний ээлжинд хараар за */
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;   /* Хэрэв <a> таг ашиглаж байгаа бол доогуур зураасыг арилгана */
+}
+
+#btn:hover {
+    background: #b2744c;
+    color: white;
+}
+
+
+
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 70px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading span{
+    color: #b2744c;
+}
+#about .card {
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 10px;
+}
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid orange;
+    color: #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    background-color: #b2744c;
+    color: #f7f5f2;
+}
+@media screen and (max-width:982px){
+    #about p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width:766px){  /*дэлгэцийн өргөн 766px ба түүнээс бага бол.*/
+    #about p{
+        font-size: 15px;
+    }
+}
+#about{
+    height: 120vh;
+}
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+
+
+#top-cards{
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2;
+}
+.heading2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading2 span{
+    color: #b2744c;
+}
+#top-cards .container{
+    margin-top: 30px;
+}
+#top-cards .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+#top-cards .card img {
+    border-radius: 10px;
+    width: 100%;        /* Картны өргөнийг бүрэн дүүргэнэ */
+    height: 250px;      /* Зургийн өндрийг ижил болгох (хүссэн хэмжээгээрээ өөрчилж болно) */
+    object-fit: cover;  /* Зургийг сунгахгүйгээр тухайн талбайд багтааж тайрна */
+}
+#top-cards .card:hover{
+    transform: translateY(-10px);
+}
+
+
+
+#menu{
+    width: 100%;
+    margin-top: 60px;
+}
+.heading3{
+    text-align: center;
+    font-size: 30px;
+    color: #b2744c;
+    font-weight: bold;
+    border-bottom: 2px solid #b2744c;
+    padding-top: 200px;
+}
+
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Картуудыг голлуулна */
+    gap: 20px;
+    margin-top: 50px;
+}
+
+
+#menu .card {
+    flex: 0 1 280px; /* Картын тогтмол өргөн */
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Доторх зүйлсийг голлуулна */
+    transition: 0.4s;
+}
+
+
+#menu .card img {
+    width: 100%;
+    height: 180px; /* Зургийн тогтмол өндөр */
+    object-fit: contain; /* Зургийг сунгахгүйгээр багтаана */
+    margin-bottom: 15px;
+}
+
+/* Одуудыг шар өнгөтэй болгох */
+.star i {
+    color: #b2744c;
+    font-size: 14px;
+}
+
+/* Кофены нэр */
+#menu h3 {
+    text-align: center;
+    color: #b2744c;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Үнэ болон сагсны хэсэг */
+.price-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Үнийг үргэлж доод хэсэгт байлгана */
+}
+
+#menu .card p {
+    color: #b2744c;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Сагсны дүрс */
+#menu .card span {
+    color: #b2744c;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#menu .card:hover {
+    transform: translateY(-10px);
+}
+/* Бүтээгдэхүүний үндсэн контейнер */
+#container3 {
+    display: flex;
+    flex-wrap: wrap; /* Дэлгэц жижигрэхэд картууд доошоо шилжинэ */
+    justify-content: center; /* Картуудыг голлуулна */
+    gap: 25px; /* Картууд хоорондын зай */
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* Карт бүрийн хэмжээг ижил болгох */
+.product-card {
+    flex: 0 1 280px; /* Картын өргөнийг тогтмол 280px болгоно */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Зөөлөн сүүдэр */
+    display: flex;
+    flex-direction: column; /* Доторх зүйлсийг дээрээс доош өрнө */
+    align-items: center; /* Бүх зүйлийг хэвтээ тэнхлэгээр голлуулна */
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+/* Зургийн хэмжээг ижил болгох (Хамгийн чухал хэсэг) */
+#container3 img {
+    width: 100%;
+    height: 220px; /* Бүх зургийг ижил өндөртэй болгоно */
+    object-fit: contain; /* Зургийг сунгахгүйгээр тухайн хэмжээнд багтаана */
+    margin-bottom: 15px;
+}
+
+/* Бүтээгдэхүүний нэр */
+#product h3 {
+    color: #b2744c;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Үнэ болон сагсны хэсгийг нэг шугаманд, доор нь барих */
+.price-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Үнийг зүүн талд, сагсыг баруун талд */
+    align-items: center;
+    margin-top: auto; /* Хэрэв гарчиг урт байвал үнийг үргэлж доор нь ижил түвшинд барина */
+}
+
+#product p {
+    color: #b2744c;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Хуучин үнэ (Зураас) */
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+    margin-left: 8px;
+}
